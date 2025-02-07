@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .logo-product {
+    display: flex;
+    align-items: center;  /* Aligns items (image & text) vertically */
+    justify-content: space-around; /* Puts space between image & text */
+    padding: 10px; /* Adds some spacing */
+    width: 100%; /* Ensures it takes the full width */
+    margin-top: 130px;
+    margin-bottom: -40px;
+  }
+  
+  .logo-product img {
+    max-height: 250px; /* Set max width to keep it responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: -8px;
+  }
+  
+  #products-title {
+    font-size: 2.5rem; /* Adjust title size */
+    white-space: nowrap; /* Prevents text from breaking */
+    font-weight: bold;
+  }
+  
+
+  /* #products-title{
+    margin-top: 150px;
+    margin-bottom: -50px;
+    padding-left: 11%;
+    font-weight: bold;
+  } */
+
+  /* #logoX{
+    display: block;  
+  max-width: 100%; 
+  height: auto;    
+  margin: auto;    
+  
+   Centers vertically 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -210px;
+  }
+   */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Styles */
+  .section {
+    margin: 50px 0;
+  }
+  
+  /* .section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1e90ff;
+    display: inline-block;
+    padding-bottom: 5px;
+  } */
+  
+  .more-link {
+    font-size: 0.9rem;
+    color: #1e90ff;
+    float: right;
+    text-decoration: none;
+  }
+  
+  .more-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Card Container */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Zoom Effect on Images */
+  .card img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    padding: 20px;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .card p {
+      font-size: 0.8rem;
+    }
+
+    #logoX{
+      height: 70px;
+    }
+  }
+  

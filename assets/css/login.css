@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f3;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Login Section */
+  .login-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    background-color: whitesmoke;
+    color: #155c22;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login-text{
+    margin-bottom: 20px;
+  }
+
+  .logo{
+    width: auto;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  
+  /* .logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  } */
+  
+  .login-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%; /* Reduce form width */
+  }
+  
+  .login-section label {
+    font-size: 1rem;
+  }
+  
+  .login-section input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%; /* Keeps input responsive */
+  }
+  
+  .login-section button {
+    margin-top:6px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-section button:hover {
+    background-color: #2e7d32;
+  }
+  
+  /* Pricing Section */
+  .pricing-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    background-color: #155c22;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .price-box:hover {
+    background-color: #2e7d32;
+      transition: background-color 0.3s ease;
+  
+  }
+  
+  .price-box {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    cursor: pointer;
+  }
+  
+  .price-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .price-box p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .login-section, .pricing-section {
+      max-width: 100%;
+    }
+  
+    .price-box {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .login-section input, .login-section button {
+      font-size: 0.9rem;
+    }
+  
+    .price-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .price-box p {
+      font-size: 1.2rem;
+    }
+  }
+  
